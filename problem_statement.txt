@@ -1,0 +1,4 @@
+Problems related to making serf:
+Need a reinforced learning llm which learn from things while searching things on youtube and must be specific while making it(need ai to think for it)
+Use get/post method to fetch data from any llm api
+Put some thing in settings button
