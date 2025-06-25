@@ -42,30 +42,38 @@ The project combines the power of **Python** (for AI and automation logic) and *
 
 2. **Install Python dependencies:**
    ```bash
-   pip install -r requirements.txt
+   python -m venv envjarvis 
+   pip install eel    
+   pip install PyAudio    
+   pip install pywhatkit        
+   pip install SpeechRecognition
+   pip install  pyttsx3   
+   pip install playsound==1.2.2
+   pip install pyautogui
+   pip install pyautogui pywinauto keyboard pygetwindow
+   pip install pipwin
+   pip install -q -U google-genai 
+    pip install google-generativeai
+   
    ```
 
 3. **Install JavaScript dependencies:**
    ```bash
-   npm install
+   npm install express cors @google/generative-ai
+   npm install @google/genai
    ```
 
 ## Usage
 
-1. **Start the backend (Python):**
+1. **Start the frontend (Python):**
    ```bash
-   python app.py
+   python main.py
    ```
 
-2. **Start the frontend (JavaScript):**
-   ```bash
-   npm start
-   ```
-
-3. **Access the AI helper:**
+2. **Access the AI helper:**
    Open your browser and go to [http://localhost:3000](http://localhost:3000) (or the appropriate port).
 
-4. **Interact with SERF_AI:**
+3. **Interact with SERF_AI:**
    - Use the web interface to send commands or ask for help.
    - Automate tasks like opening files, launching apps, or setting reminders with natural language.
 
@@ -73,10 +81,10 @@ The project combines the power of **Python** (for AI and automation logic) and *
 
 ```
 SERF_AI/
-├── backend/            # Python code: automation, AI logic
-├── frontend/           # JavaScript/HTML/CSS: UI
-├── requirements.txt    # Python dependencies
-├── package.json        # JavaScript dependencies
+├── .git/            
+├── .vscode/           
+├── engine/    
+├── www/        
 ├── README.md           # Project documentation
 └── ...                 # Other files and folders
 ```
